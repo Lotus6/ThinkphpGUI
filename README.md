@@ -3,6 +3,11 @@
 * Thinkphp(GUI)漏洞利用工具，支持各版本TP漏洞检测，命令执行，getshell。
 * 如果感觉对您有帮助，不错的话，请您给个大大的 ⭐️❗️
 
+0. 支持版本：
+   
+      <img width="247" alt="截屏2021-06-23 上午2 23 51" src="https://user-images.githubusercontent.com/63742814/122979444-23a80300-d3ca-11eb-90d4-197e33204fce.png">
+
+##
 1. 检测单个版本漏洞
 <img width="980" alt="检查单个" src="https://user-images.githubusercontent.com/63742814/122975534-05d89f00-d3c6-11eb-92d6-9690608faac6.png">
 
