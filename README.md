@@ -3,7 +3,13 @@
 * Thinkphp(GUI)漏洞利用工具，支持各版本TP漏洞检测，命令执行，getshell。 (如果感觉对您有帮助，不错的话，请您给个大大的 ⭐️❗️)
 
 **V1.1**
-新增ThinkPHP5.x,3.x日志泄露检测
+
+新增:ThinkPHP5.x,ThinkPHP3.x日志泄露
+
+<img width="284" alt="截屏2021-06-27 下午6 34 29" src="https://user-images.githubusercontent.com/63742814/123541306-67a65980-d776-11eb-8a23-dfa45fc6e3a4.png">
+
+
+
 
 **V1.0**
 * 支持版本：
