@@ -1,10 +1,12 @@
 # ThinkPHPGUI
 
-* Thinkphp(GUI)漏洞利用工具，支持各版本TP漏洞检测，命令执行，getshell。 (如果感觉对您有帮助，不错的话，请您给个大大的 ⭐️❗️)
+* Thinkphp(GUI)漏洞利用工具，支持各版本TP漏洞检测，命令执行，getshell。 (如果感觉对您有帮助，感觉不错的话，请您给个大大的 ⭐️❗️)
 
-**V1.2(待更新)**
+**V1.2**
 
-tp3,5日志下载，tp3.2.3日志包含rce（暂无复线成功环境）
+新增：刚爆出的 ThinkPHP 3.x 日志包含RCE，getshell，命令执行
+
+<img width="980" alt="截屏2021-07-22 上午12 45 51" src="https://user-images.githubusercontent.com/63742814/126529238-fb01f1f3-8d8f-43f6-9dbb-1456d7a7dc84.png">
 
 ##
 
