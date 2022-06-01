@@ -1,0 +1,120 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:32:p, par l {seq {par l {comp label1:::p:35:p, comp label3:::p::p}, space :::p, par l {seq {space :p:57:p, comp textArea1:::p::p, space :91:733:x}, seq {par l {seq l {comp url_txt:::p:264:p, space s:::p, comp label2:::p:36:p}, seq l {comp file_txt:::p:266:p, space :::p, comp import_btn:::p:60:p}}, par l {seq l {space :p:16:p, comp comboBox:::p:250:p}, seq l {space s:::p, comp batch_test_btn:::p::p}}, space :p:32:p, par l {seq {comp test_btn:::p:57:p, space u:::p, comp clear_btn:::p:57:p}, seq {space :6:6:p, comp getshell_btn:::p:110:p}}, space :0:35:x}}}, seq {comp tabbedPane1:::p:801:p, space :0:35:x}}}}"
+			"$verticalGroup": "par l {seq l {space :p:12:p, par b {comp label1::b:p:39:p, comp url_txt::b:p::p, comp label2::b:::x, comp comboBox::b:p::p, comp clear_btn::b:p::p, comp test_btn::b:p::p}, space :::p, par l {par b {comp label3::b:p:43:p, comp file_txt::b:p::p, comp import_btn::b:p::p, comp batch_test_btn::b:p::p}, comp getshell_btn::l:::x}, space :::p, comp tabbedPane1:::p:513:p, space :::p, comp textArea1:::p::p, space :p:9:p}}"
+		} ) {
+			name: "this"
+			"title": "ThinkphpGUI By 莲花"
+			"minimumSize": new java.awt.Dimension( 0, 22 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "URL:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "url_txt"
+				"text": "http://127.0.0.1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "版本:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "test_btn"
+				"text": "检测"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "ThinkPHP 5.0 RCE"
+					addElement( "ThinkPHP 5.0 RCE" )
+					addElement( "ThinkPHP 5.0.10 RCE" )
+					addElement( "ThinkPHP 5.0.22/5.1.29 RCE" )
+					addElement( "ThinkPHP 5.0.23 RCE" )
+					addElement( "ThinkPHP 5.0.24-5.1.30 RCE" )
+					addElement( "ThinkPHP 5.x 数据库信息泄露" )
+					addElement( "ThinkPHP 5.x 日志泄露" )
+					addElement( "ThinkPHP 3.x RCE" )
+					addElement( "ThinkPHP 3.x 日志泄露" )
+					addElement( "ThinkPHP 3.x Log RCE" )
+					addElement( "ALL" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JTextArea" ) {
+				name: "textArea1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clear_btn"
+				"text": "Clear"
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp scrollPane1::l::801:x}"
+					"$verticalGroup": "par l {comp scrollPane1::l::481:x}"
+				} ) {
+					name: "panel1"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "infores_txt"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "信息"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp label4:::p:35:p, space :::p, comp cmd_txt:::p:537:p, space :p:34:p, comp fun_btn:::p::p, space ::105:x}, comp scrollPane2::l::801:x}"
+					"$verticalGroup": "par l {seq l {par b {comp label4::b:p:39:p, comp cmd_txt::b:p::p, comp fun_btn::b:p::p}, space :::p, comp scrollPane2::::436:x}}"
+				} ) {
+					name: "panel2"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "CMD:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "cmd_txt"
+						"text": "whoami"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "fun_btn"
+						"text": "执行"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "cmdres_txt"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "命令执行"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "路径："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "file_txt"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "import_btn"
+				"text": "导入"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "batch_test_btn"
+				"text": "批量检测"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "getshell_btn"
+				"text": "GetSehll"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 45, 10 )
+			"size": new java.awt.Dimension( 870, 675 )
+		} )
+	}
+}
